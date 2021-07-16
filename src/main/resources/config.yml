@@ -1,0 +1,25 @@
+gui:
+  showOpened: true
+  showPlayer: true
+  showLocation: true
+deathChest:
+  holoName:
+    enable: true
+    content: '&c%player_displayname% &c的死亡箱子'
+  #0-100
+  dropPercent: 50
+  world: world
+  #秒
+  time: 120
+holoName:
+  enable: true
+  content: '&6奖励箱 &a$name'
+refreshChestMessage:
+  enable: true
+  # & = §, && = &
+  content: '&6奖励箱 &c&l$name &6已在 &b$x $y $z &6刷新!'
+openChestMessage:
+  enable: true
+  # & = §, && = &
+  #support papi
+  content: '&a玩家 &6&l%player_displayname% &a打开了在 &b$x $y $z &a的奖励箱!'

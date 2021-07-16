@@ -1,0 +1,22 @@
+name: RewardChest
+version: ${version}
+main: tech.rimuruchan.rewardchest.RewardChest
+depend:
+  - PlaceholderAPI
+authors: [ RimuruChan ]
+website: rimuruchan.tech
+contact: RealSprite233@outlook.com
+commands:
+  rewardchest:
+    description: main command
+    aliases:
+      - rchest
+permissions:
+  rewardchest.admin:
+    default: op
+    description: admin permission
+    children:
+      rewardchest.broadcast.openchest:
+        description: receive a broadcast while player open rewardchest
+      rewardchest.broadcast.refreshchest:
+        description: receive a broadcast while the chest refreshed
