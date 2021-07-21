@@ -1,5 +1,3 @@
-import org.apache.tools.ant.filters.ReplaceTokens
-
 plugins {
     id 'java'
     id 'org.jetbrains.kotlin.jvm' version '1.5.20'
@@ -7,7 +5,7 @@ plugins {
 }
 
 group = 'tech.rimuruchan'
-version = '1.0-SNAPSHOT'
+version = '2.0-SNAPSHOT'
 
 sourceCompatibility = '1.8'
 targetCompatibility = '1.8'
@@ -35,7 +33,8 @@ dependencies {
 
 processResources {
     from(sourceSets.main.resources.srcDirs) {
-        filter ReplaceTokens, tokens: [version: version]
+        include('plugin.yml')
+        expand 'version': version
     }
 }
 
